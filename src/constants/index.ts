@@ -51,26 +51,6 @@ export const myProjects: Project[] = [
       { id: 2, name: "TailwindCSS", path: "assets/tailwindcss.png" },
       { id: 3, name: "TypeScript", path: "/assets/typescript.png" },
     ],
-  },
-  {
-    title: "Lumino",
-    desc: "Movelo is a smart logistics platform that streamlines product distribution and delivery for modern businesses.",
-    subdesc:
-      "Developed with React, Tailwind CSS, TypeScript, Movelo offers real-time tracking, inventory management, and seamless integration for e-commerce and retail operations.",
-    href: "https://movelo-logstica.vercel.app/",
-    texture: "/textures/project/movelo.png", 
-    logo: "/assets/caminhao.avif",
-    logoStyle: {
-      backgroundColor: "#2A1816",
-      border: "0.2px solid #36201D",
-      boxShadow: "0px 0px 60px 0px #AA3C304D",
-    },
-    spotlight: "/assets/spotlight1.png",
-    tags: [
-      { id: 1, name: "React.js", path: "/assets/react.svg" },
-      { id: 2, name: "TailwindCSS", path: "assets/tailwindcss.png" },
-      { id: 3, name: "TypeScript", path: "/assets/typescript.png" },
-    ],
   }
   
 ];
