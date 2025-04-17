@@ -9,7 +9,7 @@ export const navLinks: NavLink[] = [
   { id: 2, name: "About", href: "#about" },
   { id: 3, name: "Projects", href: "#projects" },
   { id: 4, name: "Work", href: "#work" },
-  { id: 5, name: "Technologies", href: "#Technologies" },
+  { id: 5, name: "Technologies", href: "#technologies" },
   { id: 6, name: "Contact", href: "#contact" },
 ];
 
