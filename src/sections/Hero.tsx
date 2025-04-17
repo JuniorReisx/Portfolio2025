@@ -51,44 +51,62 @@ export function Hero() {
           </h1>
         </div>
       </div>
-      <div className="w-full h-full absolute inset-0 z-0">
-        <Canvas className="w-full h-full">
-          <Suspense fallback={<CanvasLoader />}>
-            <Leva hidden />
-            <PerspectiveCamera makeDefault position={[0, 0, 30]} />
+      
+      {/* Mobile Static Image (Only shown on mobile) */}
+      {isMobile && (
+        <div className="absolute inset-0 z-0 flex items-center justify-center">
+          <div className="relative w-full h-full flex items-center justify-center ">
+            <img 
+              src="/assets/pc.png" 
+              alt="Developer Workspace" 
+              className="w-f[%100] h-[%50] object-cover opacity-30"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
+          </div>
+        </div>
+      )}
+      
+      {/* 3D Canvas (Only shown on non-mobile) */}
+      {!isMobile && (
+        <div className="w-full h-full absolute inset-0 z-0">
+          <Canvas className="w-full h-full">
+            <Suspense fallback={<CanvasLoader />}>
+              <Leva hidden />
+              <PerspectiveCamera makeDefault position={[0, 0, 30]} />
 
-            <HeroCamera isMobile={isMobile}>
-              <HackerRoom
-                scale={sizes.deskScale}
-                position={deskPosition}
-                rotation={[0.1, -Math.PI, 0]}
-              />
-            </HeroCamera>
+              <HeroCamera isMobile={isMobile}>
+                <HackerRoom
+                  scale={sizes.deskScale}
+                  position={deskPosition}
+                  rotation={[0.1, -Math.PI, 0]}
+                />
+              </HeroCamera>
 
-            <group>
-              <Target
-                position={sizes.targetPosition as [number, number, number]}
-              />
-              <ReactLogo
-                position={toVector3(sizes.reactLogoPosition)}
-                scale={[1.5, 1.5, 1.5]}
-                rotation={[0, 0, 0]}
-              />
+              <group>
+                <Target
+                  position={sizes.targetPosition as [number, number, number]}
+                />
+                <ReactLogo
+                  position={toVector3(sizes.reactLogoPosition)}
+                  scale={[1.5, 1.5, 1.5]}
+                  rotation={[0, 0, 0]}
+                />
 
-              <Rings position={ringPosition} />
-              <Cube
-                position={[9, -7, 2]}
-                rotation={[Math.PI / 2, 2, 0]}
-                scale={1}
-              />
-            </group>
+                <Rings position={ringPosition} />
+                <Cube
+                  position={[9, -7, 2]}
+                  rotation={[Math.PI / 2, 2, 0]}
+                  scale={1}
+                />
+              </group>
 
-            <ambientLight intensity={1} />
-            <directionalLight position={[10, 10, 10]} intensity={0.5} />
-            <pointLight position={[-10, -10, -10]} color="#3b82f6" intensity={0.8} />
-          </Suspense>
-        </Canvas>
-      </div>
+              <ambientLight intensity={1} />
+              <directionalLight position={[10, 10, 10]} intensity={0.5} />
+              <pointLight position={[-10, -10, -10]} color="#3b82f6" intensity={0.8} />
+            </Suspense>
+          </Canvas>
+        </div>
+      )}
 
       <div className={`absolute top-1/2 left-4 z-10 flex flex-col gap-6 transition-all duration-1000 sm:flex hidden ${isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
         <a href="https://github.com/JuniorReisx" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-white transition-colors">
