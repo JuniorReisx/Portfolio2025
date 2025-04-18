@@ -52,7 +52,6 @@ export function Hero() {
         </div>
       </div>
       
-      {/* Mobile Static Image (Only shown on mobile) */}
       {isMobile && (
         <div className="absolute inset-0 z-0 flex items-center justify-center">
           <div className="relative w-full h-full flex items-center justify-center ">
@@ -66,7 +65,6 @@ export function Hero() {
         </div>
       )}
       
-      {/* 3D Canvas (Only shown on non-mobile) */}
       {!isMobile && (
         <div className="w-full h-full absolute inset-0 z-0">
           <Canvas className="w-full h-full">
