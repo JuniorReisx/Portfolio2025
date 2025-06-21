@@ -4,29 +4,55 @@ const technologies = [
   {
     name: "React",
     icon: "assets/reactIcon.png",
-    description: "Biblioteca JavaScript para criar interfaces de usuário interativas"
+    description: "JavaScript library for building interactive user interfaces"
   },
   {
     name: "Tailwind CSS",
     icon: "assets/tailwindIcon.svg",
-    description: "Framework CSS utilitário para desenvolvimento rápido"
+    description: "Utility-first CSS framework for rapid development"
   },
   {
     name: "Node.js",
     icon: "assets/nodeIcon.svg",
-    description: "Ambiente de execução JavaScript do lado do servidor"
+    description: "JavaScript runtime environment for server-side development"
   },
   {
     name: "TypeScript",
     icon: "assets/typescriptIcon.svg",
-    description: "Superset tipado de JavaScript que compila para JavaScript puro"
+    description: "Typed superset of JavaScript that compiles to plain JavaScript"
   },
   {
     name: "Express",
     icon: "assets/expressIcon.png",
-    description: "Framework web minimalista para Node.js"
+    description: "Minimalist web framework for Node.js"
+  },
+  {
+    name: "Cloud Computing AWS",
+    icon: "assets/aws.png",
+    description: "Cloud computing services provided by Amazon Web Services"
+  },
+  {
+    name: "PostgreSQL",
+    icon: "assets/post.png",
+    description: "Advanced open-source relational database management system"
+  },
+  {
+    name: "Docker",
+    icon: "assets/dockerIcon.png",
+    description: "Platform for building, deploying, and running applications in containers"
+  },
+  {
+    name: "Git",
+    icon: "assets/git.png",
+    description: "Distributed version control system to track code changes"
+  },
+  {
+    name: "Jest",
+    icon: "assets/jest.png",
+    description: "JavaScript testing framework focused on simplicity"
   }
 ];
+
 
 export function Technologies() {
   const [hoveredTech, setHoveredTech] = useState<string | null>(null);
@@ -48,7 +74,7 @@ export function Technologies() {
                 <img
                   src={tech.icon}
                   alt={tech.name}
-                  className="w-20 h-20 object-contain"
+                  className="w-30 h-30 object-contain"
                 />
               </div>
               
