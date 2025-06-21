@@ -54,24 +54,69 @@ export const myProjects: Project[] = [
   },
   {
     title: "Lumino",
-    desc: "Movelo is a smart logistics platform that streamlines product distribution and delivery for modern businesses.",
+    desc: "Lumino is a modern, responsive and intelligent chatbot interface built with React, TypeScript, and Tailwind CSS. Designed to be clean, fast, and user-friendly, Lumino connects users with AI-powered conversations that feel smooth and intuitive.",
     subdesc:
-      "Developed with React, Tailwind CSS, TypeScript, Movelo offers real-time tracking, inventory management, and seamless integration for e-commerce and retail operations.",
-    href: "https://movelo-logstica.vercel.app/",
-    texture: "/textures/project/movelo.png", 
-    logo: "/assets/caminhao.avif",
+      "Built with a focus on conversational AI, Lumino delivers real-time responses, context-aware interactions, and a seamless UI experience. Perfect for businesses and users looking for an intelligent and engaging chatbot solution.",
+    href: "https://chat-bot-lumino.vercel.app/",
+    texture: "/textures/project/lumini.mp4",
+    logo: "/assets/robo.png",
     logoStyle: {
-      backgroundColor: "#2A1816",
+      backgroundColor: "#FFFFFF",
       border: "0.2px solid #36201D",
-      boxShadow: "0px 0px 60px 0px #AA3C304D",
+      boxShadow: "0px 0px 60px 0px #1D4ED84D",
     },
     spotlight: "/assets/spotlight1.png",
     tags: [
       { id: 1, name: "React.js", path: "/assets/react.svg" },
       { id: 2, name: "TailwindCSS", path: "assets/tailwindcss.png" },
       { id: 3, name: "TypeScript", path: "/assets/typescript.png" },
+      { id: 4, name: "Gemini AI", path: "/assets/GeminiAi.png" },
+
+    ],
+  },
+  {
+    title: "Azul & Branco",
+    desc: "Azul & Branco is a modern e-commerce platform currently in its beta stage, focused on delivering a clean and intuitive UI. While not fully functional yet, the project serves as a foundation for testing design, layout, and user experience.",
+    subdesc:
+      "Built with React, TypeScript, and Tailwind CSS, Azul & Branco aims to offer a responsive and elegant shopping interface. Currently under development, it's open to feedback and improvements as it evolves toward a fully operational release.",
+    href: "https://azul-branco.vercel.app/",
+    texture: "/textures/project/azulebranco.mp4",
+    logo: "/assets/shirt.jpg",
+    logoStyle: {
+      backgroundColor: "#060202",
+      border: "0.2px solid #1A1A1A",
+      boxShadow: "0px 0px 60px 0px #1D4ED84D",
+    },
+    spotlight: "/assets/spotlight1.png",
+    tags: [
+      { id: 1, name: "React.js", path: "/assets/react.svg" },
+      { id: 2, name: "TailwindCSS", path: "/assets/tailwindcss.png" },
+      { id: 3, name: "TypeScript", path: "/assets/typescript.png" },
+    ],
+  },
+  {
+    title: "Rick and Morty",
+    desc: "Rick and Morty is a sleek and responsive React application that allows users to explore characters from the Rick and Morty universe through a clean and dynamic interface powered by GraphQL.",
+    subdesc:
+      "Featuring lazy-loaded images, detailed character modals, and retry functionality, the app delivers a smooth browsing experience with performance in mind. Built with React, Tailwind CSS, and TypeScript.",
+    href: "https://rickandmorty-eosin-five.vercel.app/",
+    texture: "/textures/project/rickvideo.mp4",
+    logo: "/assets/rickandmorty.jpeg",
+    logoStyle: {
+      backgroundColor: "#FFFFFF",
+      border: "0.2px solid #1A1A1A",
+      boxShadow: "0px 0px 60px 0px #1D4ED84D",
+    },
+    spotlight: "/assets/spotlight1.png",
+    tags: [
+      { id: 1, name: "React.js", path: "/assets/react.svg" },
+      { id: 2, name: "TailwindCSS", path: "/assets/tailwindcss.png" },
+      { id: 3, name: "TypeScript", path: "/assets/typescript.png" },
+      { id: 4, name: "GraphQL", path: "/assets/GraphQL.png" },
     ],
   }
+  
+  
   
 ];
 

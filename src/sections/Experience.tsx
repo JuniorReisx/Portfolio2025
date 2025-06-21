@@ -5,7 +5,7 @@ import { useState } from "react"; // Added useState import
 type AnimationName = "idle" | "salute" | "clapping" | "victory" | undefined;
 
 export function WorkExperience() {
-  const [animationName, setAnimationName] = useState<AnimationName>("idle")
+  const [, setAnimationName] = useState<AnimationName>("idle");
 
   return (
     <section className="c-space my-20" id="work">
