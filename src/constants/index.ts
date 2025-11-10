@@ -172,16 +172,25 @@ export interface WorkExperience {
 export const workExperiences: WorkExperience[] = [
   {
     id: 1,
+    name: "SIHS - Secretaria de Infraestrutura Hídrica e Saneamento",
+    pos: "Infrastructure Analyst",
+    duration: "2025 - Present",
+    title:
+      "I work as an Infrastructure Analyst at SIHS, providing technical support and ensuring the reliability and performance of the department’s IT environment. I manage Windows Server and Active Directory, monitor infrastructure using Zabbix and Grafana, and assist in network configuration and maintenance (TCP/IP, DNS, DHCP).",
+    icon: "/assets/sihsr.png",
+    animation: "victory",
+  },{
+    id: 2,
     name: "Paraguaçu Engenharia ",
     pos: "Technical Support",
-    duration: "2024 - Present",
+    duration: "2024 - 2025",
     title:
       "I work on troubleshooting hardware and software issues, ensuring the continuous operation of systems. I perform maintenance and system updates to guarantee efficient and effective IT operations, and provide user support in resolving any doubts or issues.",  
     icon: "/assets/paraguacu.png",
     animation: "victory",
   },
   {
-    id: 2,
+    id: 3,
     name: "Freelancer Self-employed ",
     pos: "Fullstack Developer",
     duration: "2022 - Present",
@@ -189,15 +198,5 @@ export const workExperiences: WorkExperience[] = [
       "I develop websites that solve problems, always focusing on delivering scalable, high-performance, and secure systems.",
     icon: "/assets/freela.png",
     animation: "zoom-in",
-  },
-  {
-    id: 3,
-    name: "Comunidade Frontend Fusion",
-    pos: "Frontend Developer volunteer",
-    duration: "2024",
-    title:
-      "A community where I helped develop frontend technological solutions with social impact.",
-    icon: "/assets/fusion.png",
-    animation: "victory",
-  },
+  }
 ];

@@ -17,7 +17,7 @@ export function WorkExperience() {
             {/* Replaced 3D canvas with an image */}
             <div className="w-full h-full flex items-center justify-center">
               <img 
-                src="../assets/ia.jpg" 
+                src="../assets/gilmaik.jpg" 
                 alt="Work Experience" 
                 className="w-full h-full object-contain"
               />

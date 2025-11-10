@@ -45,7 +45,7 @@ export function Hero() {
       
       <div className={`relative z-10 w-full max-w-6xl mx-auto flex flex-col sm:mt-36 mt-20 px-6 transition-all duration-1000 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <div className="flex flex-col gap-3 items-center">
-          <p className="text-neutral-400 tracking-wider uppercase text-sm font-medium">Fullstack Developer</p>
+          <p className="text-neutral-400 tracking-wider uppercase text-sm font-medium">Software Engineer</p>
           <h1 className="sm:text-4xl text-2xl font-bold text-white text-center font-generalsans">
             Hi, I am <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">Junior Reis</span> <span className="inline-block animate-wave origin-bottom-right ml-1">👋</span>
           </h1>

@@ -32,7 +32,7 @@ export function About() {
             <div>
               <p className="grid-headtext">Hi, I’m Junior Reis</p>
               <p className="grid-subtext">
-                With 2 years of experience, I have honed my skills in both
+                With 3 years of experience, I have honed my skills in both
                 frontend and backend dev, creating dynamic and responsive
                 websites.
               </p>

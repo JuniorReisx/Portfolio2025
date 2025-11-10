@@ -1,58 +1,66 @@
 import { useState } from "react";
-
 const technologies = [
+  {
+    name: "Windows Server & Active Directory",
+    icon: "assets/windowsServer.jpg",
+    description: "Management of users, domains, policies, and enterprise systems"
+  },
+  {
+    name: "Zabbix & Grafana",
+    icon: "assets/monitoring.png",
+    description: "Infrastructure monitoring and performance visualization"
+  },
+  {
+    name: "Linux & PowerShell",
+    icon: "assets/linux.jpg",
+    description: "Automation, scripting, and system administration across environments"
+  },
   {
     name: "React",
     icon: "assets/reactIcon.png",
-    description: "JavaScript library for building interactive user interfaces"
-  },
-  {
-    name: "Tailwind CSS",
-    icon: "assets/tailwindIcon.svg",
-    description: "Utility-first CSS framework for rapid development"
-  },
-  {
-    name: "Node.js",
-    icon: "assets/nodeIcon.svg",
-    description: "JavaScript runtime environment for server-side development"
+    description: "Library for building modern, responsive user interfaces"
   },
   {
     name: "TypeScript",
     icon: "assets/typescriptIcon.svg",
-    description: "Typed superset of JavaScript that compiles to plain JavaScript"
+    description: "Typed JavaScript for scalable and maintainable applications"
   },
   {
-    name: "Express",
-    icon: "assets/expressIcon.png",
-    description: "Minimalist web framework for Node.js"
+    name: "Node.js & Express",
+    icon: "assets/nodeIcon.svg",
+    description: "Backend development environment for APIs and server applications"
   },
   {
-    name: "Cloud Computing AWS",
-    icon: "assets/aws.png",
-    description: "Cloud computing services provided by Amazon Web Services"
-  },
-  {
-    name: "PostgreSQL",
-    icon: "assets/post.png",
-    description: "Advanced open-source relational database management system"
+    name: "Tailwind CSS",
+    icon: "assets/tailwindIcon.svg",
+    description: "Utility-first framework for fast, responsive UI development"
   },
   {
     name: "Docker",
     icon: "assets/dockerIcon.png",
-    description: "Platform for building, deploying, and running applications in containers"
+    description: "Containerization for consistent, scalable, and portable deployments"
   },
   {
-    name: "Git",
+    name: "AWS Cloud",
+    icon: "assets/aws.png",
+    description: "Cloud platform for scalable infrastructure and automation"
+  },
+  {
+    name: "PostgreSQL",
+    icon: "assets/post.png",
+    description: "Open-source relational database for structured data management"
+  },
+  {
+    name: "Git & GitHub",
     icon: "assets/git.png",
-    description: "Distributed version control system to track code changes"
+    description: "Version control and collaborative software development"
   },
   {
     name: "Jest",
     icon: "assets/jest.png",
-    description: "JavaScript testing framework focused on simplicity"
+    description: "Testing framework for reliable unit and integration tests"
   }
 ];
-
 
 export function Technologies() {
   const [hoveredTech, setHoveredTech] = useState<string | null>(null);
